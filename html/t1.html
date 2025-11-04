@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- initial-scale : 확대 기능-->>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta og:title>
+    <title>first html</title>
+    <style>
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        main,
+        article,
+        aside {
+            border: 1px solid red;
+        }
+
+        main section {
+            border: 1px dotted blue;
+        }
+
+        .container {
+            background-color: yellow;
+        }
+
+        ul li:first-child {
+            font-weight: 700;
+        }
+
+        < !-- nth-child(?) : 몇번째 자식 바꿀지-->ol li:nth-child(2) {
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- REM : root 폰트 사이즈-->>
+    <!-- frontend = 리렌더링 신경 x -> 최적화 good!-->>
+    <header>
+        <!-- div 보다 header가 더 우선순위 높음-->>
+        <h1>Title</h1>
+        <nav>Nav</nav>
+    </header>
+
+    <main style="display: flex; align-items: center; justify-content: center;">
+        <div class="container">
+            <section aria-label="section1" onclick="console.log('$$$')">
+                <h3>Section</h3>
+                <ul>
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                </ul>
+            </section>
+            <article>
+                <h3>Article</h3>
+                <!--ol>li{$}*3-->
+                <ol>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ol>
+
+            </article>
+        </div>
+        <aside style="text-align: center; width: 100px; height: 200px;">
+            Aside
+        </aside>
+    </main>
+</body>
+
+<footer style="text-align: center;">
+    &#169; Hanaro8 2025
+</footer>
+
+</html>
