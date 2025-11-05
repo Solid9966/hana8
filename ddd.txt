@@ -1,6 +1,3 @@
 555
-<<<<<<< HEAD
 test rebase
 wow
-=======
->>>>>>> refs/remotes/origin/develop
